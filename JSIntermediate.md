@@ -31,14 +31,19 @@ JS array pun memiliki method yaitu:
 3. pop() digunakan untuk menghapus data array dari akhir.
 4. shift() digunakan untuk menghapus awal data diarray 
 5. splice() digunakan untuk menghapus dan menambahkan data ditengah pada array
+
 ![contohArraySplice](/Images/Screenshot%202022-10-07%20153121.png)
+
 6. slice() digunakan untuk mengcopy data array.
+
 ![contohArraySlice](/Images//Screenshot%202022-10-07%20154140.png)
 
 Menggunakan looping pada array:
 
 1. for loop
+
 ![contohForLoopdiArray](/Images/Screenshot%202022-10-07%20160256.png)
+
 2. For of loop. Penulisan syntaxnya yaitu:
 
 for (variabel of iterasi){
@@ -47,14 +52,19 @@ for (variabel of iterasi){
 }
 
 Hasilnya:
+
 ![contohForofLoopdiArray](/Images/Screenshot%202022-10-07%20161020.png)
 
 3. For Each Loop
+
 ![contohForEachLoopdiArray](/Images/Screenshot%202022-10-07%20162006.png)
+
 4. Map Loop. digunakan untuk looping, mengembalikan (return)dalam bentuk array
+
 ![contohMapLoopdiArray](/Images//Screenshot%202022-10-07%20163605.png)
 
 Selanjutnya terdapat array multidimensi. Nah, array multidimensi ini adalah sebuah array yang didalamnnya ada array lagi. Contohnya:
+
 ![contohArrayMultidimensi](/Images//Screenshot%202022-10-07%20165504.png)
 
 ## JS Object
@@ -78,6 +88,7 @@ let property = "umur"
 console.log(siswa[property])
 
 Cara membuat property baru disebuah object
+
 ![contohMembuatPropertybaru](/Images/Screenshot%202022-10-08%20105242.png)
 
 kita cukup menuliskan nama objeknya, lalu tuliskan property dan value yang akan ditambahkan.
@@ -96,7 +107,9 @@ Contohnya: delete siswa.umur
 jadi ouputnya dalam objek siswa property umur akan terhapus.
 
 Cara membuat object yang menampung function:
+
 ![contohobjeckNampungFunction](/Images/Screenshot%202022-10-08%20121845.png)
+
 untuk mengaksesnya masih sama, cuma dikarenakan valuenya itu adalah function. Untuk memanggilnya property ditambahkan () yang menendakan value berisi function. Jika ingin merubah object menjadi array terdapat biult in methodnya:
 
 console.log(Object.keys(siswa))
@@ -106,12 +119,15 @@ console.log(Object.value(siswa))
 Untuk yang keys ia kan merupakan nama lain dari property, jadi ia akan membuat sebuah array yang berisikan property dari object siswa. Sedangkan untuk membuat array dari value object dengan menggunakan object.value
 
 Cara membuat nested object:
+
 ![contohNestedobject](/Images/Screenshot%202022-10-08%20124418.png)
 
-Cara penggunaan loop di object yaitu menggunakan forin:
+Cara penggunaan loop di object yaitu menggunakan for in:
+
 ![contohLoopObject](/Images/Screenshot%202022-10-08%20132414.png)
 
 Cara menggunakan array of object: bentuk dasarnya [{}, {}, {}]
+
 ![contohArrayofObject](/Images/Screenshot%202022-10-08%20132545.png)
 
 ## JS Modules
@@ -124,9 +140,11 @@ JS modules merupakan cara untuk memisahkan kode ke file yang berbeda. Sehingga n
 Nah untuk mempelajari js modeles kita memerlukan dua keyword yaitu export dan import. 
 
 Contohnya: kita membuat satu file utama dengan nama indonesia.js dan file lainnya jepang.js. Pada file jepang.js kita melakukan export variabel
+
 ![contohExportVariabel](/Images/Screenshot%202022-10-08%20185256.png)
 
 Pada file utama indonesia.js kita melakukan penangkapan export dengan kata kunci import. Penulisan dasarnya import ... from ./jepang.js
+
 ![contohImportVariabel](/Images/Screenshot%202022-10-08%20185450.png)
 
 Tidak hanya variabel saja yang dapat menggunakan export dan import. Bisa dalam bentuk object, string, number, function. Kita tidak bisa melakukan export functio, variabel dll didalam satu file js. Dianjurkan untuk memilihnya. 
@@ -134,9 +152,11 @@ Tidak hanya variabel saja yang dapat menggunakan export dan import. Bisa dalam b
 Selanjutnya ada yang namanya export default.Dalam artian bahwa jepang memiliki satu produk utama yaitu entertaiment. Export default hanya memberikan 1 export di setiap file.
 
 Contoh eport default pada file jepang.js
+
 ![contohExportDefault](/Images/Screenshot%202022-10-08%20191702.png)
 
 Penangkpan export menggunakan imprt di file indonesia.js
+
 ![contohImportDeafult](/Images/Screenshot%202022-10-08%20192418.png)
 
 Dan juga perlu diingat bahwa file yang menjadi file utama tidak bisa melakukan export hanya bisa menerima import. Begitu juga file lainnya hanya bisa melakukan export tidak bisa melakukan import.
@@ -159,7 +179,9 @@ Penggunaan asycronous ketika kita akses sebuah web dan web itu memerlukan pengam
 
 JS asyncronous memiliki tiga kunci utama:
 1. Callback merupakan function yang dijadikan sebagai argument. Contoh:
+
 ![contohCallback](/Images/Screenshot%202022-10-09%20115216.png)
+
 2. Promise. dalam promise ada beberapa istilah utama yaitu pending, rejected dan fulfailed.
 
 - Pending itu semisal kita janjian ketemuan hari kamis. Nah dari hari kita mengajak smpai hari kamis itu dinamakan pending/jeda
@@ -167,7 +189,9 @@ JS asyncronous memiliki tiga kunci utama:
 - fulfailed. Keadaan promise ketemuan itu terpenuhi
 
 Contoh
+
 ![contohPromise](/Images/Screenshot%202022-10-09%20122613.png)
+
 3. Async await
 
 ## Web Storage
@@ -186,3 +210,16 @@ Data yang tidak bisa disimpan pada web storage:
 Web storage memiliki dua jenis objek untuk menyimpan data:
 1. localStorage. penyimpanan web yang tidak memiliki masa expire
 2. Session storage. penyimpanan yang diperuntukkan buat satu sesi saja. Jadi apabila kita close tab datanya akan hilang
+
+## Git dan Github Lanjutan
+
+
+Mengapa seorang programmer wajib memiliki tools git dan Github? alasannya cukup simple sebab dua tools itu memiliki ketergantungan satu sama lain, dan hampir semua orang yang bekerja didunia programmer memilikinya untuk memudahkan pekerjaan mereka. Perbedaan dari Git dan Github sendiri yaitu git berfungsi mencatat setiap perubahan pada file proyek yang dikerjakan oleh banyak orang maupun sendiri, sedangkan github  layanan cloud yang berguna untuk menyimpan dan mengelola sebuah project yang dinamakan repository (repo git) sehingga memodahkan programmer untuk berkolaborasi menyelesaikan program
+
+Cara membuat repository baru di git cukup mudah, dengan menggunakan perintah: mkdir (make directory) kita sudah dapat membuat directory local. Jika kita ingin melakukan 'commit' maka terlebih dahulu melakukan 'git init .' pada directory projek yang akan dihubungkan ke Github, setelah itu melakukan 'git add .', nah baru kita dapat melakukan 'git commit -m'. Fungsi dari 'git commit' yaitu memberikan pesan di terakhir perubahan yang kita buat.
+
+di materi Git dan Github lanjutan ini saya sudah merangkum step by step mulai dari membuat repository organization sampai cara menangani jika terdapat conflict di Github:
+
+![git&GithubLanjutan](/Images/Screenshot%202022-10-15%20123357.png)
+
+Keterangan: Untuk tulisan yang berwarna orange merupakan tugas/step by step yang harus dilakukan oleh team leader.
