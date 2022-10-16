@@ -194,6 +194,18 @@ Contoh
 
 3. Async await
 
+Penjelasan dasar sebelum membahas aync await. Yaitu mengenal tentang database, server dan cara mengambil data kemudian ditampilkan dalam bentuk html. Contoh sederhana implementasinya: Jika menemukan sekumpulan data gambar, tulisan yang banyak, maka tidak mungkin kita membuat data tersebut berulang kali langsung di hard code html. Alangkah baiknya data tersebut disimpan oleh database. Jika ingin menampilkannya maka harus request ke server kemudian server akan request ke database. Setelah diterima oleh database, hasilnya akan dikembalikan lagi ke server sampai akhirnya dapat ditampilkan pada halaman html.
+
+Dari contoh sederhana tersebut pasti sudah mengerti keterhubungan database, server, dan html. Terdapat satu hal lagi, yaitu yang menjadi perantara html ke server dan database disebut dengan API. Untuk menangkap data dari API kita menggunakan juga Async Await. Cara penulisannya:
+
+![contohPenulisanAyncAwait](/Images/Screenshot%202022-10-16%20150450.png)
+
+Dari contoh penulisan diatas dapat menggunakan versi function biasa atau juga dapat menggunakan arrow function. Nah dikarenakan API itu berupa endpoint atau url, guna meminta/request layanannya membutuhkan yang dinamakan fetch. Contohnya:
+
+![contohPenulisanAsynAwait2](/Images/Screenshot%202022-10-16%20151910.png)
+
+Didalam contoh tersebut selain penggunaan async terdapat juga penggunaan await. Nah kedua keyword itu yang menjadi cirikhas async await. Ketika kita request ke API ia akan mengembalikan data berformat json(Javascript on notation) alias dalam bentuk array of object. Kegunaan lainnya json yaitu untuk unboxing data yang ada didalam API.
+
 ## Web Storage
 
 dari kata Storage merupakan kata yang sudah tak asing lagi untuk didengar. Berasal dari bahasa inggris yang artinya penyimpanan. Sehingga web storage ialah sebuah penyimpanan data secara lokal yang ada di web. jadi, web memiliki penyimpanannya sendiri. selain web storage terdapat penyimpanan data lainnya via web yaitu cookie. Sebelum adanya pembaharuan HTML versi 5 penyimpanan web menggunakan cookie, jelas kalau dari segi performa lebih bagus web storage. Perantara file JS dengan web browser menggunakan web API. Apabila ingin menggunakan web storage diusahakan datanya sudah dalam bentuk terenskripsi.
@@ -223,3 +235,7 @@ di materi Git dan Github lanjutan ini saya sudah merangkum step by step mulai da
 ![git&GithubLanjutan](/Images/Screenshot%202022-10-15%20123357.png)
 
 Keterangan: Untuk tulisan yang berwarna orange merupakan tugas/step by step yang harus dilakukan oleh team leader.
+
+
+
+
