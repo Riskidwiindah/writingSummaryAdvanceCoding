@@ -237,5 +237,47 @@ di materi Git dan Github lanjutan ini saya sudah merangkum step by step mulai da
 Keterangan: Untuk tulisan yang berwarna orange merupakan tugas/step by step yang harus dilakukan oleh team leader.
 
 
+## Web Responsive dan Bootstrap
 
+
+Web responsive merupakan tampilan sebuah website jika dibuka atau diakses bisa menyesuaikan dengan ukuran devicenya. Istilah yang biasa dipergunakan di web responsive yaitu viewport.
+
+1.  viewport adalah area yang dapat diakses oleh user. Jadi jika kita mengkases via mobile maka area viewport akan mengikuti ukuran devicenya. Cara penulisan viewport:
+
+![contohViewport](/Images/Screenshot%202022-10-17%20200302.png)
+
+cirinya yaitu dengan dibantu oleh tag meta. Ketika web yang tidak menggunakan viewport saat kita melihat tampilannya seakan-akan tampilannya terlihat dari kejauhan.
+
+![contohTanpaViewport](/Images/Screenshot%202022-10-17%20200547.png)
+
+2. Cara lainnya agar responsive menggunakan istilah max-width. Yang artinya ia akan menyesuaikan ukuran maksimalnya berapa sesuai dengan patokan sebesar ukuran layar.
+
+3. Cara selanjutnya yaitu menggunakan CSS Relative Unit. Satuan px merupakan contoh dari penggunaan satuan ketegori absolute (termasuk ukuran tetap). Sedangkan yang relative:
+
+- rem yaitu satuan ukuran yang mengikuti ukuran root htmlnya. Defaultnya sebuah website ukururan rootnya sebesar 16px. Jika kita menggunakan 2 rem berarti untuk konversi ke pixel: 2 x 16 menjadi 32px.
+
+- em yaitu besar satuan yang mengikuti containernya (parentnya). Jadi, jika kita ingin ukuran 2 em lalu parentnya memilki ukuran 20pixel, maka: 2x20 menjadi 40px
+
+- vw yaitu satuan yang mengikuti 1 persen dari ukuran lebar viewport. Jika kita menginginkan ukuran sebesar 50vw maka artinya sebesar 50% dari ukuran layar.
+
+4. Media query digunakan untuk membuat beberapa styles tergantung pada jenis devicenya. Contoh penulisannya:
+
+![contohPenulisanMediaQuery](/Images/Screenshot%202022-10-17%20205222.png)
+
+Jadi ketika layar berukuran 767pixel atau dibawah ukuran tersebut maka styling cssnya akan berlaku.
+
+Boostrap merupakan framework html dan css yang membuat sebuah website dapat responsive lebih cepat. Jika ingin menmasang framework bootstrap cukup menggunakan link bawaan yang sudah di siapkan di web bootstrapnya:
+
+![contohPemasangan](/Images/Screenshot%202022-10-17%20211014.png)
+
+Cara mengatur layout pada bootstrap:
+1. Breakpoint. boostrap memiliki 6 macam breakpoint: 
+- Extra small (<576px)
+- small (>= 576px)
+- medium (>= 768px)
+- large (>=992px)
+- extra large (>=1200px)
+- extra extra large (>= 1400px)
+
+2. Container merupakan sebuah building block, termasuk komponen yang wajib sebelum menggunakan sistem grid dari bootstrap.
 
